@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GraphQL Demo</title>
+    <link rel="icon" href="GraphQL_Logo.png">
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="index.js"></script>
+<style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+    .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+    .fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-center" style="padding:128px 16px; background: #E535AB">
+    <h1 class="w3-margin w3-jumbo w3-text-white">GraphQL Demo</h1>
+    <p class="w3-xlarge w3-text-white">With Node.js and PostgresSQL</p>
+    <button id="showModal" class="btn w3-black w3-padding-large w3-large w3-margin-top"
+    data-toggle="modal" data-target="#exampleModal">Test demo</button>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+        <div class="w3-twothird">
+            <h1>GraphQL</h1>
+            <h5 class="w3-padding-32">GraphQL is a query language for APIs and a runtime for fulfilling those queries
+                with your existing data. GraphQL provides a complete and understandable description of the data in your
+                API, gives clients the power to ask for exactly what they need and nothing more, makes it easier to
+                evolve APIs over time, and enables powerful developer tools.</h5>
+        </div>
+
+        <div class="w3-third w3-center">
+            <img src="/GraphQL_Logo.png" width="200" height="200">
+        </div>
+    </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+        <div class="w3-third w3-center">
+            <img src="/Postgresql_elephant.png" width="200" height="200">
+        </div>
+
+        <div class="w3-twothird">
+            <h1>PostgresSQL</h1>
+            <h5 class="w3-padding-32">PostgreSQL, often simply Postgres, is an object-relational database management
+                system (ORDBMS) with an emphasis on extensibility and standards compliance. As a database server, its
+                primary functions are to store data securely and return that data in response to requests from other
+                software applications. It can handle workloads ranging from small single-machine applications to large
+                Internet-facing applications (or for data warehousing) with many concurrent users.</h5>
+        </div>
+    </div>
+</div>
+
+<div class="w3-container w3-center w3-black w3-padding-32">
+    <img src="/Nodejs_logo.png" width="327" height="200">
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">List of Dog Owners</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="closeModal" aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <ul id="ownerList">
+
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="showAll" class="btn btn-primary">Show All</button>
+                <button type="button" class="btn btn-secondary closeModal" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
